@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ProductListActivity">
+
+    <include layout="@layout/commen_toolbar"></include>
+
+    <com.example.wf.restaurant.ui.view.refresh.SwipeRefreshLayout
+        android:id="@+id/id_swipRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.example.wf.restaurant.ui.view.refresh.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="数量 0"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="#f3f5f7"
+            android:textColor="#fb601b"/>
+        <Button
+            android:id="@+id/btn_price_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="0元 立即支付"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_orange"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>
