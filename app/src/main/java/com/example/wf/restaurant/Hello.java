@@ -4,5 +4,6 @@ public class Hello {
     private int i;
     private int j;
     private int m;
+    int branch1;
     //修改
 }
